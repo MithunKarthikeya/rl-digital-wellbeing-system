@@ -1,0 +1,63 @@
+{
+  "app_usage": {
+    "q": {
+      "mean": 8.139,
+      "std": 0.929,
+      "min": 5.41,
+      "max": 9.664,
+      "final": 8.139
+    },
+    "dqn": {
+      "mean": 8.385,
+      "std": 1.403,
+      "min": 4.589,
+      "max": 11.091,
+      "final": 8.385
+    },
+    "q_episodes": 500,
+    "dqn_episodes": 500
+  },
+  "notification": {
+    "q": {
+      "mean": -10.995,
+      "std": 8.098,
+      "min": -29.375,
+      "max": 11.071,
+      "final": -10.995
+    },
+    "dqn": {
+      "mean": -11.096,
+      "std": 10.213,
+      "min": -36.2,
+      "max": 10.769,
+      "final": -11.096
+    },
+    "q_episodes": 500,
+    "dqn_episodes": 500
+  },
+  "wellbeing": {
+    "q": {
+      "mean": 141.293,
+      "std": 16.805,
+      "min": 99.739,
+      "max": 178.818,
+      "final": 141.293
+    },
+    "dqn": {
+      "mean": 151.799,
+      "std": 27.994,
+      "min": 97.382,
+      "max": 237.145,
+      "final": 151.799
+    },
+    "q_episodes": 300,
+    "dqn_episodes": 300
+  },
+  "meta": {
+    "dataset": "final_unified_dataset.csv",
+    "total_users": 7500,
+    "sampled_users": 500,
+    "duration_min": 3.0,
+    "trained_at": "2026-05-13 17:23:16"
+  }
+}

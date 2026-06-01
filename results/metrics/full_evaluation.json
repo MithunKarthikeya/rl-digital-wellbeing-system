@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "app_usage_control": {
+      "errors": [
+        "Missing metadata: app_usage_control_metadata.json",
+        "Missing Q-Learning checkpoint: app_usage_control_q_model.npz"
+      ]
+    },
+    "notification_scheduling": {
+      "errors": [
+        "Missing metadata: notification_scheduling_metadata.json",
+        "Missing Q-Learning checkpoint: notification_scheduling_q_model.npz"
+      ]
+    },
+    "wellbeing_optimization": {
+      "errors": [
+        "Missing metadata: wellbeing_optimization_metadata.json",
+        "Missing Q-Learning checkpoint: wellbeing_optimization_q_model.npz"
+      ]
+    }
+  },
+  "meta": {
+    "episodes": 100,
+    "seed": 42
+  }
+}

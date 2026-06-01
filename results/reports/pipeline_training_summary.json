@@ -1,0 +1,77 @@
+{
+  "pipeline_architecture": {
+    "stage1": {
+      "name": "App Usage Control",
+      "state_dims": 10,
+      "actions": 243
+    },
+    "stage2": {
+      "name": "Notification Scheduling",
+      "state_dims": 12,
+      "actions": 3,
+      "extra_input_from_stage1": [
+        "addiction_risk",
+        "distraction_score"
+      ]
+    },
+    "stage3": {
+      "name": "Wellbeing Optimization",
+      "state_dims": 18,
+      "actions": 10,
+      "extra_input_from_stage1": [
+        "addiction_risk",
+        "distraction_score",
+        "social_media_limit",
+        "gaming_limit",
+        "productivity_ratio",
+        "total_controlled_usage"
+      ],
+      "extra_input_from_stage2": [
+        "distraction_reduced",
+        "avg_engagement"
+      ]
+    }
+  },
+  "training_results": {
+    "stage1": {
+      "first25": 19.883,
+      "last25": 21.761,
+      "improvement": 1.878
+    },
+    "stage2": {
+      "first25": 11.504,
+      "last25": 17.374,
+      "improvement": 5.87
+    },
+    "stage3": {
+      "first25": 5.03,
+      "last25": 7.692,
+      "improvement": 2.662
+    },
+    "total": {
+      "first25": 36.417,
+      "last25": 46.827,
+      "improvement": 10.41
+    },
+    "wellbeing_score": {
+      "first25": 0.695,
+      "last25": 0.81
+    }
+  },
+  "evaluation": {
+    "mean_wellbeing": 0.77,
+    "std_wellbeing": 0.163,
+    "mean_distraction_reduced": 0.383,
+    "mean_addiction_risk": 0.286,
+    "top_interventions": {
+      "mindfulness_reminder": 21,
+      "productivity_boost": 13,
+      "sleep_optimization": 9
+    }
+  },
+  "meta": {
+    "dataset": "final_unified_dataset.csv",
+    "duration_min": 0.71,
+    "trained_at": "2026-05-15 01:21:48"
+  }
+}
